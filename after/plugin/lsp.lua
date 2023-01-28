@@ -27,5 +27,10 @@ lsp.setup()
 
 
 vim.diagnostic.config({
-    virtual_text = true
+    virtual_text = true,
+    signs = true,
+    float = true,
+    underline = false,
+    DiagnosticVirtualTextHint = true,
+    DiagnosticVirtualTextInfo = true
 })
