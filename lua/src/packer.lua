@@ -5,18 +5,25 @@ return require('packer').startup(function(use)
 	use 'wbthomason/packer.nvim'
 
 	use {
-		'nvim-telescope/telescope.nvim', tag = '0.1.1',
+		'nvim-telescope/telescope.nvim', tag = '0.1.4',
 		-- or                            , branch = '0.1.x',
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
 	use({
-		'rose-pine/neovim',
-		as = 'rose-pine',
+		'catppuccin/nvim',
+		as = 'catppuccin',
 		config = function()
-            require("rose-pine").setup()
-            vim.cmd('colorscheme rose-pine')
+            require("catppuccin").setup()
+            vim.cmd('colorscheme catppuccin')
 		end
 	})
+    use{
+        ('folke/noice.nvim'),
+        requires = {
+            'MunifTanjim/nui.nvim',
+            'rcarriga/nvim-notify'
+        }
+    }
 	use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 	use('theprimeagen/harpoon')
 	use('mbbill/undotree')
@@ -30,7 +37,6 @@ return require('packer').startup(function(use)
         requires = {
             'nvim-tree/nvim-web-devicons', -- optional, for file icons
         },
-        tag = 'nightly' -- optional, updated every week. (see issue #1193)
     }
     use {
         "windwp/nvim-autopairs",
