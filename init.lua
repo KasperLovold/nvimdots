@@ -1,3 +1,3 @@
 require("src.remap")
-require("src.packer")
+require("src.lazy")
 require("src.set")
