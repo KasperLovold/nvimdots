@@ -33,6 +33,7 @@ require('lazy').setup({
       config = true
     },
     'christoomey/vim-tmux-navigator',
+    'lewis6991/gitsigns.nvim',
     {
       'nvim-lualine/lualine.nvim',
       dependencies = { 'kyazdani42/nvim-web-devicons', opt = true }
