@@ -30,7 +30,7 @@ vim.diagnostic.config({
     virtual_text = true,
     signs = true,
     float = true,
-    underline = false,
+    underline = true,
     DiagnosticVirtualTextHint = true,
     DiagnosticVirtualTextInfo = true
 })
