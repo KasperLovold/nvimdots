@@ -21,7 +21,23 @@ require('lazy').setup({
     },
     'github/copilot.vim',
     'theprimeagen/harpoon',
+    {
+        'mfussenegger/nvim-dap',
+        dependencies = {
+            'theHamsta/nvim-dap-virtual-text',
+            'mfussenegger/nvim-dap-python',
+            'rcarriga/nvim-dap-ui',
+            'nvim-telescope/telescope-dap.nvim'
+        }
+    },
     'mbbill/undotree',
+    {
+    'chipsenkbeil/distant.nvim',
+    branch = 'v0.3',
+    config = function()
+        require('distant'):setup()
+    end
+    },
     {
       "NeogitOrg/neogit",
       dependencies = {
