@@ -26,7 +26,6 @@ require('lazy').setup({
         build = function() vim.fn["mkdp#util#install"]() end,
     },
     { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
-    { "ray-x/lsp_signature.nvim", config = function() require"lsp_signature".on_attach() end },
     { "folke/todo-comments.nvim", dependencies = "nvim-lua/plenary.nvim" },
     {
         "folke/trouble.nvim",
@@ -34,7 +33,6 @@ require('lazy').setup({
         cmd = "Trouble"
     },
     'github/copilot.vim',
-    'theprimeagen/harpoon',
     {
         'mfussenegger/nvim-dap',
         dependencies = {
@@ -46,15 +44,7 @@ require('lazy').setup({
     },
     'mbbill/undotree',
     {
-        'chipsenkbeil/distant.nvim',
-        branch = 'v0.3',
-        config = function()
-            require('distant'):setup()
-        end
-    },
-    {
         "NeogitOrg/neogit",
-        tag  = "v0.0.1",
         dependencies = {
             "nvim-lua/plenary.nvim",         -- required
             "sindrets/diffview.nvim",        -- optional - Diff integration
