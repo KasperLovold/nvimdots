@@ -119,5 +119,9 @@ require('lazy').setup({
             {'L3MON4D3/LuaSnip'},             -- Required
             {'rafamadriz/friendly-snippets'}, -- Optional
         }
+    },
+    {
+        'renerocksai/telekasten.nvim',
+        dependencies = { 'nvim-telescope/telescope.nvim' }
     }
 })
