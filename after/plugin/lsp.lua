@@ -18,7 +18,6 @@ lsp.setup_nvim_cmp({
 })
 
 lsp.ensure_installed({
-	'tsserver',
 	'eslint',
 	'rust_analyzer'
 })

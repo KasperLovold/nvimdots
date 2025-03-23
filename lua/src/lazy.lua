@@ -57,6 +57,7 @@ require('lazy').setup({
     },
 
     'christoomey/vim-tmux-navigator',
+    'gpanders/editorconfig.nvim',
     'lewis6991/gitsigns.nvim',
     {
         'nvim-lualine/lualine.nvim',
